@@ -1,2 +1,0 @@
-cover page
-<style>.header, #footer-sections {display:none!important}</style>

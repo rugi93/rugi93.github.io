@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSCO</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class= "logo1" src="/images/Logo/Browser Icon.png" alt="">ALSHOLAH OIL SERVICES<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" class="languages">العربية</a>
+                   <div class="submenu-1">
+                        <ul>
+
+                        </ul>
+                    </div>
+            </li>
+            <li><a href="index.html" onclick="toggleMenu();">About Us</a></li>
+            <li><a href="clients" onclick="toggleMenu();">Our Clients</a></li>
+            <li><a href="services.html" onclick="toggleMenu();">Services</a></li>
+            <li><a href="contact.html" onclick="toggleMenu();">Contact Us</a></li>
+        </ul>
+    </header>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Services</h2>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                <img src="images/SOSCO/industrial.png">
+                </div>
+                <div class="text">
+                    <h3>Material Supply</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                <img src="images/SOSCO/meeting 3.png">
+                </div>
+                <div class="text">
+                    <h3>Logistics & Transportation</h3>
+                </div>
+            </div>
+            <a href="contracting-maintainence.html">
+            <div class="box">
+                <div class="imgBx">
+                <img src="images/SOSCO/meeting 1.png">
+                </div>
+                <div class="text">
+                    <h3>Contracting & Maintainence</h3>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+
+    <div class="copyrightText">
+        <p>Copyright 2020 <a href="#">SOSCO</a>. All Rights Reserved</p>
+    </div>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY >0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+    function initMap() {
+        var location = {lat: 30.712914, lng: 20.191998};
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13, 
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4qz4YsHAklXr7NXJyCzPS9N3cgtK3oHg&callback=initMap"></script>
+</body>
+</html>

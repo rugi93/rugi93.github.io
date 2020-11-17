@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSCO</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class= "logo1" src="/images/Logo/Browser Icon.png" alt="">ALSHOLAH OIL SERVICES<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" class="languages">العربية</a>
+                   <div class="submenu-1">
+                        <ul>
+
+                        </ul>
+                    </div>
+            </li>
+            <li><a href="index" onclick="toggleMenu();">About Us</a></li>
+            <li><a href="clients" onclick="toggleMenu();">Our Clients</a></li>
+            <li><a href="services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="contact" onclick="toggleMenu();">Contact Us</a></li>
+        </ul>
+    </header>
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText">Contact Us</h2>
+            <p></p>
+        </div>
+
+        <div class="contactForm">
+            <div class="contactForm1">
+                <h3>Our Opening Hours</h3>
+                <p>Sunday - Thursday: 8AM - 8PM</p>
+                <h3>Emails</h3>
+                <p>info@agsosco.com</p>
+                <h3>Phone Numbers</h3>
+                <p>(+218) 0914132537</p>
+                <p>(+218) 0917436275</p>
+                
+            </div>
+
+        </div>
+        <div class="mapdiv">
+            <div class="contactForm1" id="map">
+                 
+            </div>
+
+        
+        </div>
+
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright 2020 <a href="#">SOSCO</a>. All Rights Reserved</p>
+    </div>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY >0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+    function initMap() {
+        var location = {lat: 30.712914, lng: 20.191998};
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13, 
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4qz4YsHAklXr7NXJyCzPS9N3cgtK3oHg&callback=initMap"></script>
+</body>
+</html>

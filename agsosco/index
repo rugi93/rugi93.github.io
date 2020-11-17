@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSCO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img class= "logo1" src="/images/Logo/Browser Icon.png" alt="">ALSHOLAH OIL SERVICES<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" class="languages"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+              </svg></a>
+                   <div class="submenu-1">
+                        <ul>
+
+                        </ul>
+                    </div>
+            </li>
+            <li><a href="#banner" onclick="toggleMenu();">About Us</a></li>
+            <li><a href="clients.html" onclick="toggleMenu();">Our Clients</a></li>
+            <li><a href="services.html" onclick="toggleMenu();">Services</a></li>
+            <li><a href="contact.html" onclick="toggleMenu();">Contact Us</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>SOSCO</h2>
+            <p>With over 8 years of combined experience in purchasing, sales, management and global resources, our highly experienced staff on the expertise of engineers and consultants in the oil field extending for more than 25 years specialises in time and cost effective identification of multiple sources for your existing purchasing needs as well as targeted discovery of new products to maintain your organisation at peak economic opportunity and performance.</p>
+            <a href="services.html" class="btn">Our Services</a>
+        </div>
+        
+    </section>
+    <section class="about us" id="about us">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p class="aboutusp">Alsholah Oil Services, specializes in international procurement services of energy and industrial equipment to multi-national energy companies. With over 2 years of combined purchasing, sales, management and global resources, our highly experienced staff specializes in time and cost effective identification of multiple sources for your existing purchasing needs as well as targeted discovery of new products to maintain your organization at peak economic opportunity and performance.</p>
+
+                 <p class="aboutusp">Our products include electrical and oil and gas equipment / materials, oilfield and pump equipment, marine and offshore equipment, industrial consumables, gas turbine parts and tools. We have exclusive representation agreements with numerous US and International manufacturers to market and distribute their products and are currently aggressively pursuing those same agreements with other industry leaders and innovators to target additional markets with the same market savvy strategies that have already served us so well.</p> 
+                   <p class="aboutusp"> Current industries served are chemical, petrochemical, pipeline, refining, electrical, mining, oilfield maintenance, wastewater, marine equipment, and municipality services including electrical power generation. Our present typical and private utility companies and engineering / contracting firms.</p>
+                   <p class="aboutusp"> If you have any further questions, please feel free to <a href="contact.html">contact us</a> by phone or email.</p>
+                    
+                
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="/images/SOSCO/7.jpg">
+                    </div>
+            </div>
+            </div>
+            
+    </section>
+ 
+ 
+
+    <div class="copyrightText">
+        <p>Copyright 2020 <a href="#">SOSCO</a>. All Rights Reserved</p>
+    </div>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY >0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+    function initMap() {
+        var location = {lat: 30.712914, lng: 20.191998};
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 13, 
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4qz4YsHAklXr7NXJyCzPS9N3cgtK3oHg&callback=initMap"></script>
+</body>
+</html>

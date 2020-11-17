@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar .navbar-nav 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px;
+    
+}
+.navbar .navbar-nav .nav-item
+{
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.navbar-collapse
+{
+    text-align: center;
+}
+.dropdown-menu 
+{
+    text-align: center;
+}
+.jumbotron
+{
+    text-align: center;
+    background-image: url(/img/hero-bg.jpg);
+    min-height: 100vh;
+    vertical-align: center;
+}
+.jumbotron hr {
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+

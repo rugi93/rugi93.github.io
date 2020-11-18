@@ -30,7 +30,7 @@
 .jumbotron
 {
     text-align: center;
-    background-image: url(/img/hero-bg.jpg);
+    background-image: url(/images/hero-bg.jpg);
     height: 89vh;
     vertical-align: center;
 }

@@ -2,6 +2,7 @@
 
 *
 {
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 .navbar .navbar-nav 
@@ -30,12 +31,24 @@
 {
     text-align: center;
     background-image: url(/img/hero-bg.jpg);
-    min-height: 100vh;
+    height: 89vh;
     vertical-align: center;
 }
 .jumbotron hr {
     margin-left: 20em;
     margin-right: 20em;
 }
+.container-fluid{
+    padding: 0;
+}
+.navbar {
+    background-color: transparent;
+}
+.m-350 {
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+
 
 
